@@ -1,0 +1,297 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+/* Navigation Bar */
+#navbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0;
+}
+
+#navbar::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 35px;
+  margin: 1px 5px;
+  padding-right: 250px;
+  padding-left: 50px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+#navbar ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 4px 20px;
+  border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("../img/bg1.jpg") no-repeat center center/cover;
+  position: absolute;
+  
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+}
+
+#home p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+
+/* Top Places to explore */
+.top-places {
+  padding-top: 20px;
+}
+
+
+#explore {
+  margin: 10px;
+  display: flex;
+  padding-top: 15px;
+}
+
+#explore .box {
+  border: none;
+  border-radius: 23px;
+  padding: 16px;
+  margin: 10px;
+  /* background-color: #beb7b7b0; */
+
+}
+
+#explore .box img {
+  height: 250px;
+  display: block;
+  margin: auto;
+  }
+
+
+#explore .box a {
+  text-decoration: none;
+  color: #000;
+  
+}
+
+
+
+#explore .box:hover{
+  background: #beb7b7b0;
+  color: red;
+  
+}
+
+#explore .box p {
+  font-family: "Raleway", sans-serif;
+}
+
+
+/* Visit offline */
+
+.visit {
+  position: relative;
+}
+
+.visit h1 {
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+  
+}
+
+.visit::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg3.jpg") no-repeat center center/cover ;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#location {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#location img {
+  
+  height: 150px;
+  padding: 34px;
+  padding-top: 60px;
+
+}
+
+#location .office h2 {
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif;
+}
+
+
+/* Enquiry section */
+
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  background: url('../img/contact.jpg') no-repeat center center/cover;
+  
+}
+
+.contact-box {
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ padding-bottom: 34px;
+}
+
+.contact-box input, .contact-box textarea {
+  border-radius: 7px;
+  font-size: 1rem;
+
+}
+
+.contact-box  button {
+  cursor: pointer;
+  padding: 7px 18px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  font-size: 1.1rem;
+}
+
+.contact-box  button:hover {
+  background-color: rgba(179, 171, 171, 0.918);
+  border: 2px solid #000;
+  
+  
+}
+
+.contact-box .form-group {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3rem;
+}
+
+
+/* Footer  */
+.footer {
+  
+  background: grey;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+/* Utility Classes */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+  font-size: 2.8rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.btn {
+  border: 1px solid grey;
+  border-radius: 25px;
+  background-color: #fff;
+  opacity: 0.89;
+  font-size: 1.4rem;
+  margin-top: 30px;
+}
+
+.btn a {
+  padding: 2px 10px;
+  border-radius: 20px;
+  
+  color: #000;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #fff;
+  background-color: grey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+
+
